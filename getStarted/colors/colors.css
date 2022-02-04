@@ -1,0 +1,21 @@
+.palette {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.palette > div {
+  width: 10rem;
+  height: 10rem;
+  color: var(--secondary-color);
+  font-size: var(--font-size-4);
+  padding: 0.5em;
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.palette > div:nth-child(2) {
+  color: var(--lynx-black-color);
+}
