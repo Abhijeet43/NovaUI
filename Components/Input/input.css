@@ -1,0 +1,52 @@
+.input-group {
+  color: var(--lynx-black-color);
+  font-size: var(--font-size-4);
+  line-height: 20px;
+  margin: 0 20px 10px;
+  width: 80%;
+}
+
+.input-label {
+  font-weight: 500;
+}
+
+.input {
+  width: 100%;
+  padding: 0.8rem;
+  outline: none;
+  border: 0.1rem solid var(--lynx-black-color);
+  border-radius: var(--border-radius);
+}
+
+.input:focus {
+  border: 0.1rem solid var(--primary-color);
+}
+
+/* ERROR CLASS */
+
+.input-group.err .input {
+  border: 0.1rem solid var(--danger-color);
+  margin-bottom: 0.5rem;
+}
+
+.err-message {
+  font-size: 1.2rem;
+}
+
+.err-message i {
+  margin-right: 0.3rem;
+}
+
+/* SUCCESS CLASS */
+.input-group.success .input {
+  border: 0.1rem solid var(--success-color);
+  margin-bottom: 0.5rem;
+}
+
+.success-message {
+  font-size: 1.2rem;
+}
+
+.success-message i {
+  margin-right: 0.3rem;
+}
