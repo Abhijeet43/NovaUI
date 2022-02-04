@@ -1,0 +1,13 @@
+.alert {
+  font-size: var(--font-size-4);
+  margin: 0.5em;
+  padding: 1em;
+  border-radius: var(--border-radius);
+  width: 100%;
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+.alert-icon {
+  margin-right: 0.5rem;
+}
