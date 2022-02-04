@@ -1,0 +1,59 @@
+:root {
+  /* font variable */
+  --default-font: "Montserrat", sans-serif;
+
+  /* theme colors */
+  --primary-color: #7245b6;
+  --secondary-color: #f3f4f6;
+  --info-color: #296780;
+  --success-color: #109d48;
+  --danger-color: #d63030;
+  --warning-color: #e7b51c;
+  
+  /* basic colors */
+  --lynx-black-color: #333;
+  --lynx-red-color: #917575;
+  --purple-color: #633f99;
+  --dark-blue-color: #3b2957;
+  --lynx-pink-color: rgb(203, 92, 209);
+  --lynx-gray-color: rgba(128, 128, 128, 0.322);
+  --dark-green-color: rgb(3, 88, 3);
+  --lynx-green-color: rgba(110, 235, 110);
+  --lynx-purple-color: rgb(216 191 216 / 40%);
+  --white-color: #fff;
+  --light-gray-color: rgb(77, 75, 75);
+  --gray-color:#888891;
+  --orange-color : orange;
+  --lynx-yellow-color:#e8bd0d;
+  --lynx-brown-color:rgb(51,51,51);
+
+  /*sizes */
+  --font-size-1: 3rem;
+  --font-size-2: 2.5rem;
+  --font-size-3: 2rem;
+  --font-size-4: 1.5rem;
+  --font-size-5: 1.2rem;
+  --font-size-6: 1rem;
+  --font-size-7:0.5rem;
+ 
+
+  /* font weights */
+  --font-weight-1:900;
+  --font-weight-2:700;
+  --font-weight-3: 500;
+  --font-weight-4: 300;
+
+  /* shadows */
+  --dark-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px,
+  --light-shadow:rgb(0 0 0 / 30%) 0px 1px 3px -1px;
+  --box-shadow-1:rgb(0 0 0 / 2%) 0px 1px 3px 0px,
+    rgb(27 31 35 / 15%) 0px 0px 0px 1px;
+  /* card */
+  
+  /* border */
+  --border: .1rem solid var(--lynx-gray-color);
+
+  /* border radius */
+  --border-radius: .25rem;
+
+}
