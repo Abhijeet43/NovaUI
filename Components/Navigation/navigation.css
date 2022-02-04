@@ -1,0 +1,40 @@
+.bar-icon {
+  font-size: var(--font-size-2);
+}
+
+/* SUBMENU */
+
+.submenu {
+  position: absolute;
+  width: 10rem;
+  transform: scale(0);
+  margin-top: 1rem;
+  transform-origin: top center;
+  transition: transform 0.3s ease-in-out;
+  margin-left: 1rem;
+  z-index: 1;
+}
+
+.submenu.active {
+  transform: scale(1);
+}
+
+.submenu-item {
+  text-align: center;
+  cursor: pointer;
+  background-color: var(--white-color);
+  border-bottom: 0.1rem solid var(--lynx-gray-color);
+  width: 100%;
+}
+
+.submenu-item:hover {
+  transform: scale(1.1);
+}
+
+.submenu-link {
+  color: var(--lynx-brown-color);
+}
+
+.submenu-link:hover {
+  color: var(--primary-color);
+}
