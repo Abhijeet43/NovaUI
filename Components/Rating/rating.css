@@ -1,0 +1,17 @@
+.stars {
+  display: flex;
+}
+
+.star {
+  cursor: pointer;
+  font-size: var(--font-size-3);
+  color: var(--gray-color);
+}
+
+.yellow {
+  color: var(--lynx-yellow-color);
+}
+
+.orange {
+  color: var(--orange-color);
+}
