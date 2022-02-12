@@ -14,7 +14,6 @@
 
 .nav-subtitle {
   font-size: var(--font-size-6);
-  font-weight: 100;
   color: var(--lynx-red-color);
   font-weight: var(--font-weight-2);
 }
@@ -37,4 +36,38 @@
 
 .nav-item-link:hover {
   color: var(--primary-color);
+}
+
+.nav-item-icon {
+  padding: 1rem;
+  position: absolute;
+  font-size: var(--font-size-3);
+  top: 1rem;
+  right: 1rem;
+  color: var(--lynx-red-color);
+  z-index: 555;
+  cursor: pointer;
+  display: none;
+}
+
+.nav-item-icon:hover,
+.nav-item-link:hover {
+  color: var(--dark-purple-color);
+}
+
+.fa-xmark {
+  font-size: var(--font-size-1);
+  color: var(--secondary-color);
+  margin-right: 1rem;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 540px) {
+  .nav-item {
+    display: none;
+  }
+
+  .nav-item-icon {
+    display: inline-block;
+  }
 }
