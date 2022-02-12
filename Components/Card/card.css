@@ -160,3 +160,202 @@
 .card-head.horizontal > .card-header {
   grid-column: 2/3;
 }
+
+/* horizontal e-commerce */
+
+.horizontal-card {
+  display: flex;
+  margin: 4rem 0;
+  max-width: 70rem;
+  width: 60rem;
+  height: 20rem;
+  border-radius: 0.25rem;
+  background-color: var(--secondary-color);
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);
+}
+
+.horizontal-card-img {
+  width: 20%;
+}
+
+.horizontal-card-img img {
+  height: 100%;
+}
+
+.horizontal-card-content {
+  padding: 2rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.horizontal-card-text {
+  padding: 0 2rem;
+}
+
+.horizontal-card-title,
+.size,
+.quantity-label,
+.quantity,
+.horizontal-card .card-rating,
+.horizontal-card .card-price {
+  padding: 0.5rem;
+}
+
+.horizontal-card-title {
+  font-size: var(--font-size-1);
+}
+
+.size {
+  font-size: var(--font-size-4);
+}
+
+.quantity-label {
+  font-size: var(--font-size-4);
+  margin-right: 0.5em;
+  cursor: pointer;
+}
+
+.quantity {
+  width: 4.5rem;
+  height: 3rem;
+}
+
+.horizontal-card .card-price {
+  font-size: var(--font-size-3);
+  font-weight: 600;
+}
+
+.horizontal-card .price-before {
+  font-size: var(--font-size-4);
+  text-decoration: line-through;
+  opacity: 0.7;
+  margin-right: 0.5rem;
+}
+
+.horizontal-card .price-discount {
+  font-size: var(--font-size-6);
+  color: var(--danger-color);
+}
+
+.card-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cart-btn {
+  font-size: var(--font-size-4);
+  max-width: 15rem;
+  width: 100%;
+  margin: 0.5em;
+  padding: 0.5em 1em;
+  transition: all 0.3s ease-in-out;
+}
+
+/* flexible card */
+.flexible-card {
+  max-width: 250px;
+  margin-bottom: 2rem;
+  position: relative;
+  background-color: var(--secondary-color);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.flexible-card:hover {
+  transform: translateY(-0.5rem);
+}
+
+.flexible-card > .card-body {
+  padding: 0 1rem;
+  margin: 0;
+}
+
+.flexible-card > .card-img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.flexible-card > .card-content {
+  padding: 2rem;
+}
+
+.flexible-card > .card-head {
+  display: block;
+  margin-top: 0.5rem;
+  padding: 0 1rem;
+}
+
+.flexible-card .card-title,
+.flexible-card .card-rating,
+.flexible-card .card-price {
+  padding: 0.2rem;
+}
+
+.flexible-card .card-title {
+  font-size: var(--font-size-3);
+  font-weight: var(--font-weight-2);
+}
+
+.flexible-card .card-text {
+  font-size: var(--font-size-4);
+}
+
+.flexible-card .card-price {
+  font-size: var(--font-size-3);
+  font-weight: var(--font-weight-3);
+}
+
+.flexible-card .price-before {
+  font-size: var(--font-size-4);
+  text-decoration: line-through;
+  opacity: 0.7;
+  margin-right: 0.5rem;
+}
+
+.flexible-card .price-discount {
+  font-size: var(--font-size-6);
+  color: var(--danger-color);
+}
+
+.flexible-card > .card-footer button {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  width: 100%;
+  max-width: 100%;
+  padding: 1rem;
+}
+
+/* STARS */
+.stars {
+  display: flex;
+}
+
+.horizontal-card .star,
+.flexible-card .star {
+  font-size: var(--font-size-4);
+  margin-right: 0.2rem;
+  color: var(--lynx-gray-color);
+}
+
+.star:last-child {
+  margin-right: 0;
+}
+
+.star.star-filled {
+  color: var(--orange-color);
+}
+
+.star.star-empty {
+  color: var(--lynx-gray-color);
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 540px) {
+  .horizontal-card {
+    max-width: 45rem;
+  }
+}
