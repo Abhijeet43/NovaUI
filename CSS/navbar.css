@@ -23,7 +23,8 @@
   display: flex;
 }
 
-.nav-item {
+.nav-item,
+.main-nav-item {
   padding: 0.8rem;
 }
 
