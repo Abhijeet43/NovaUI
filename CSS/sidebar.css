@@ -2,8 +2,8 @@
   position: sticky;
   top: 0;
   height: 100vh;
+  flex-basis: 25%;
   padding: 2.5rem;
-  flex-basis: 20%;
   overflow-x: hidden;
   overflow-y: scroll;
   transition: all 0.3s ease-in-out;
