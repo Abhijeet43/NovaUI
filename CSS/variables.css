@@ -15,21 +15,22 @@
   --lynx-red-color: #917575;
   --purple-color: #633f99;
   --dark-blue-color: #3b2957;
-  --lynx-pink-color: rgb(203, 92, 209);
+  --lynx-indigo-color: #c792ea;
   --lynx-gray-color: rgba(128, 128, 128, 0.322);
-  --dark-green-color: rgb(3, 88, 3);
-  --lynx-green-color: rgba(110, 235, 110);
+  --dark-green-color: #035803;
+  --lynx-green-color: #6eeb6e;
   --lynx-purple-color: rgb(216 191 216 / 40%);
   --white-color: #fff;
-  --light-gray-color: rgb(77, 75, 75);
+  --light-gray-color: #4d4b4b;
   --gray-color:#888891;
-  --orange-color : orange;
+  --orange-color : #ff523b;
   --lynx-yellow-color:#e8bd0d;
-  --lynx-brown-color:rgb(51,51,51);
+  --lynx-brown-color:#333;
   --dark-purple-color:#472b71;
   --aside-hover-bg: #7245b631;
 
   /*sizes */
+  --landing-page-title:4rem;
   --font-size-1: 3rem;
   --font-size-2: 2.5rem;
   --font-size-3: 2rem;
@@ -50,6 +51,7 @@
   --light-shadow:rgb(0 0 0 / 30%) 0px 1px 3px -1px;
   --box-shadow-1:rgb(0 0 0 / 2%) 0px 1px 3px 0px,
     rgb(27 31 35 / 15%) 0px 0px 0px 1px;
+    --title-btn-shadow:0 3px 5px rgba(0, 0, 0, 0.3);
   
   /* border */
   --border: .1rem solid var(--lynx-gray-color);

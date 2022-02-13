@@ -65,3 +65,17 @@
 .sidebar-item:hover .sidebar-link {
   color: var(--dark-purple-color);
 }
+
+.cross {
+  display: none;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-size: var(--font-size-1);
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.cross.active {
+  display: inline-block;
+}

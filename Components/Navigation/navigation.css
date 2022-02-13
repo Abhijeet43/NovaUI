@@ -1,5 +1,16 @@
+/* NAVBAR */
+.example-box > .navbar {
+  position: relative;
+  z-index: 1;
+}
+
 .bar-icon {
   font-size: var(--font-size-2);
+}
+
+.navmenu-item {
+  position: relative;
+  padding: 0.8rem;
 }
 
 /* SUBMENU */
@@ -7,12 +18,16 @@
 .submenu {
   position: absolute;
   width: 10rem;
+  top: 3rem;
   transform: scale(0);
-  margin-top: 1rem;
   transform-origin: top center;
   transition: transform 0.3s ease-in-out;
   margin-left: 1rem;
   z-index: 1;
+}
+
+.submenu-web {
+  left: -2.5rem;
 }
 
 .submenu.active {

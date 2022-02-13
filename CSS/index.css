@@ -1,9 +1,7 @@
 @import url(./reset.css);
 @import url(./variables.css);
-@import url(./utilites.css);
 @import url(./navbar.css);
 @import url(./scrollbar.css);
-@import url(./sidebar.css);
 
 body {
   overflow: hidden;
@@ -13,14 +11,14 @@ body {
 /* BUTTON */
 .btn {
   color: var(--white-color);
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: var(--font-size-4);
+  font-weight: var(--font-weight-2);
   padding: 0.8em;
   margin: 0.8em;
   border-radius: 0.25em;
   filter: brightness(100%);
   transform: scale(1);
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--title-btn-shadow);
   transition: all 0.3s ease-in-out;
 }
 
@@ -35,12 +33,11 @@ body {
 
 .btn-secondary {
   background-color: var(--secondary-color);
-  color: var(--font-color);
+  color: var(--lynx-brown-color);
 }
 
 /* HERO */
 .hero {
-  color: var(--font-color);
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -55,17 +52,17 @@ body {
 }
 
 .hero-title {
-  font-size: 4.5rem;
-  font-weight: 900;
+  font-size: var(--landing-page-title);
+  font-weight: var(--font-weight-2);
   padding: 0.3em;
   line-height: 1.3em;
 }
 
 .hero-desc {
-  font-size: 2.5rem;
+  font-size: var(--font-size-2);
   padding: 0.6em;
   line-height: 1.5em;
-  font-weight: 500;
+  font-weight: var(--font-weight-3);
 }
 
 .hero-btns {
@@ -78,13 +75,18 @@ body {
 /* MEDIA QUERIES */
 @media (min-width: 1200px) {
   html {
-    font-size: 80%;
+    font-size: 70%;
   }
 }
 
 @media (max-width: 980px) {
   html {
-    font-size: 58%;
+    font-size: 60%;
+  }
+
+  .hero-content {
+    max-width: 80%;
+    width: 100%;
   }
 }
 
@@ -92,14 +94,13 @@ body {
   html {
     font-size: 50%;
   }
-}
-
-@media (max-width: 480px) {
-  html {
-    font-size: 40%;
+  .hero-content {
+    max-width: 100%;
+    width: 100%;
+    padding-bottom: 5rem;
   }
 
   .btn {
-    font-size: 1.3rem;
+    font-size: var(--font-size-4);
   }
 }

@@ -40,3 +40,8 @@
 .success-highlight {
   color: var(--success-color);
 }
+
+/* OVERFLOW */
+.overflow {
+  overflow: hidden;
+}
