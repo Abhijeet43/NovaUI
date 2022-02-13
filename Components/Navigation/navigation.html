@@ -5,7 +5,7 @@
     <meta name="author" content="Abhijeet Sinha" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Navigation</title>
+    <title>Navigation | NovaUI</title>
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -66,6 +66,9 @@
         <div class="sidebar-section">
           <div class="sidebar-section-title">Getting Started</div>
           <ul class="sidebar-items">
+            <li class="sidebar-item-icon">
+              <i class="fa-solid fa-xmark cross" id="cross"></i>
+            </li>
             <li class="sidebar-item">
               <a class="sidebar-link" href="../../getStarted/introduction/introduction.html"
                 >Introduction</a
@@ -172,13 +175,13 @@
                 <a href="#" class="nav-title">NovaUI</a>
               </div>
               <ul class="nav-items">
-                <li class="nav-item">
+                <li class="navmenu-item">
                   <a href="#" class="nav-link">Home</a>
                 </li>
-                <li class="nav-item">
+                <li class="navmenu-item">
                   <a href="#" target="_blank" class="nav-link">About</a>
                 </li>
-                <li class="nav-item">
+                <li class="navmenu-item">
                   <a href="#" target="_blank" class="nav-link">Contact</a>
                 </li>
               </ul>
@@ -186,7 +189,7 @@
           </div>
           <div class="iframe-wrapper">
             <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%28114%2C69%2C182%2C0.94%29&t=material&wt=none&l=text%2Fapache&width=691&ds=false&dsyoff=37px&dsblur=68px&wc=true&wa=true&pv=30px&ph=22px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cnav%2520class%253D%2522navbar%2522%253E%250A%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522nav-title%2522%253ENovaUI%253C%252Fa%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cul%2520class%253D%2522nav-items%2522%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522nav-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522nav-link%2522%253EHome%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522nav-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520target%253D%2522_blank%2522%2520class%253D%2522nav-link%2522%253EAbout%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522nav-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520target%253D%2522_blank%2522%2520class%253D%2522nav-link%2522%253EContact%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%253C%252Ful%253E%250A%253C%252Fnav%253E"
+              src="https://carbon.now.sh/embed?bg=rgba%28114%2C69%2C182%2C0.94%29&t=material&wt=none&l=text%2Fapache&width=691&ds=false&dsyoff=37px&dsblur=68px&wc=true&wa=true&pv=30px&ph=22px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cnav%2520class%253D%2522navbar%2522%253E%250A%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522nav-title%2522%253ENovaUI%253C%252Fa%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cul%2520class%253D%2522nav-items%2522%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522navmenu-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522nav-link%2522%253EHome%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522navmenu-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520target%253D%2522_blank%2522%2520class%253D%2522nav-link%2522%253EAbout%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522navmenu-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520target%253D%2522_blank%2522%2520class%253D%2522nav-link%2522%253EContact%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%253C%252Ful%253E%250A%253C%252Fnav%253E"
               style="height: 415px;"
               sandbox="allow-scripts allow-same-origin">
             </iframe>
@@ -210,7 +213,7 @@
                 <a href="#" class="nav-title">NovaUI</a>
               </div>
               <ul class="nav-items">
-                <li class="nav-item">
+                <li class="navmenu-item">
                   <a href="#" class="nav-link"><i class="fas fa-bars bar-icon"></i></a>
                 </li>
               </ul>
@@ -218,8 +221,8 @@
           </div>
           <div class="iframe-wrapper">
             <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%28114%2C69%2C182%2C0.94%29&t=material&wt=none&l=text%2Fapache&width=691&ds=false&dsyoff=37px&dsblur=68px&wc=true&wa=true&pv=30px&ph=22px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cnav%2520class%253D%2522navbar%2522%253E%250A%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522nav-title%2522%253ENovaUI%253C%252Fa%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cul%2520class%253D%2522nav-items%2522%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522nav-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522nav-link%2522%253E%253Ci%2520class%253D%2522fas%2520fa-bars%2520bar-icon%2522%253E%253C%252Fi%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%253C%252Ful%253E%250A%253C%252Fnav%253E"
-              style="height: 303px; border:0; transform: scale(1); overflow:hidden;"
+              src="https://carbon.now.sh/embed?bg=rgba%28114%2C69%2C182%2C0.94%29&t=material&wt=none&l=text%2Fapache&width=691&ds=false&dsyoff=37px&dsblur=68px&wc=true&wa=true&pv=30px&ph=22px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cnav%2520class%253D%2522navbar%2522%253E%250A%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522nav-title%2522%253ENovaUI%253C%252Fa%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cul%2520class%253D%2522nav-items%2522%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522navmenu-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522nav-link%2522%253E%253Ci%2520class%253D%2522fas%2520fa-bars%2520bar-icon%2522%253E%253C%252Fi%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%253C%252Ful%253E%250A%253C%252Fnav%253E"
+              style="height: 303px;"
               sandbox="allow-scripts allow-same-origin">
             </iframe>
           </div>
@@ -242,15 +245,15 @@
                 <a href="#" class="nav-title">NovaUI</a>
               </div>
               <ul class="nav-items">
-                <li class="nav-item">
-                  <a href="#" data-submenu-target="#submenu" class="nav-link">Web Development</a>
-                  <ul class="submenu" id="submenu">
+                <li class="navmenu-item">
+                  <a href="#" data-submenu-target="#submenu" class="nav-link">Web</a>
+                  <ul class="submenu submenu-web" id="submenu">
                     <li class="submenu-item"> <a class="submenu-link" href="#">HTML</a></li>
                     <li class="submenu-item"><a class="submenu-link" href="#">CSS</a></li>
                     <li class="submenu-item"><a class="submenu-link" href="#">JAVASCRIPT</a></li>
                   </ul>
                 </li>
-                <li class="nav-item">
+                <li class="navmenu-item">
                   <a href="#" data-submenu-target="#submenu-programming" class="nav-link">Programming</a>
                   <ul class="submenu" id="submenu-programming">
                     <li class="submenu-item"> <a class="submenu-link" href="#">C</a></li>
@@ -263,7 +266,7 @@
           </div>
           <div class="iframe-wrapper">
             <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%28114%2C69%2C182%2C0.94%29&t=material&wt=none&l=text%2Fapache&width=691&ds=false&dsyoff=37px&dsblur=68px&wc=true&wa=true&pv=30px&ph=22px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cnav%2520class%253D%2522navbar%2522%253E%250A%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522nav-title%2522%253ENovaUI%253C%252Fa%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cul%2520class%253D%2522nav-items%2522%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522nav-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520data-submenu-target%253D%2522%2523submenu%2522%2520class%253D%2522nav-link%2522%253EWeb%2520Development%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522submenu%2522%2520id%253D%2522submenu%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522submenu-item%2522%253E%2520%253Ca%2520class%253D%2522submenu-link%2522%2520href%253D%2522%2523%2522%253EHTML%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522submenu-item%2522%253E%253Ca%2520class%253D%2522submenu-link%2522%2520href%253D%2522%2523%2522%253ECSS%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522submenu-item%2522%253E%253Ca%2520class%253D%2522submenu-link%2522%2520href%253D%2522%2523%2522%253EJAVASCRIPT%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522nav-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520data-submenu-target%253D%2522%2523submenu-programming%2522%2520class%253D%2522nav-link%2522%253EProgramming%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522submenu%2522%2520id%253D%2522submenu-programming%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522submenu-item%2522%253E%2520%253Ca%2520class%253D%2522submenu-link%2522%2520href%253D%2522%2523%2522%253EC%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522submenu-item%2522%253E%253Ca%2520class%253D%2522submenu-link%2522%2520href%253D%2522%2523%2522%253EC%252B%252B%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522submenu-item%2522%253E%253Ca%2520class%253D%2522submenu-link%2522%2520href%253D%2522%2523%2522%253EJAVA%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%253C%252Ful%253E%250A%253C%252Fnav%253E"
+              src="https://carbon.now.sh/embed?bg=rgba%28114%2C69%2C182%2C0.94%29&t=material&wt=none&l=text%2Fapache&width=691&ds=false&dsyoff=37px&dsblur=68px&wc=true&wa=true&pv=30px&ph=22px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=%253Cnav%2520class%253D%2522navbar%2522%253E%250A%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522nav-title%2522%253ENovaUI%253C%252Fa%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cul%2520class%253D%2522nav-items%2522%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522navmenu-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520data-submenu-target%253D%2522%2523submenu%2522%2520class%253D%2522nav-link%2522%253EWeb%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522submenu%2520submenu-web%2522%2520id%253D%2522submenu%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522submenu-item%2522%253E%2520%253Ca%2520class%253D%2522submenu-link%2522%2520href%253D%2522%2523%2522%253EHTML%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522submenu-item%2522%253E%253Ca%2520class%253D%2522submenu-link%2522%2520href%253D%2522%2523%2522%253ECSS%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522submenu-item%2522%253E%253Ca%2520class%253D%2522submenu-link%2522%2520href%253D%2522%2523%2522%253EJAVASCRIPT%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522navmenu-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520data-submenu-target%253D%2522%2523submenu-programming%2522%2520class%253D%2522nav-link%2522%253EProgramming%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522submenu%2522%2520id%253D%2522submenu-programming%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522submenu-item%2522%253E%2520%253Ca%2520class%253D%2522submenu-link%2522%2520href%253D%2522%2523%2522%253EC%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522submenu-item%2522%253E%253Ca%2520class%253D%2522submenu-link%2522%2520href%253D%2522%2523%2522%253EC%252B%252B%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522submenu-item%2522%253E%253Ca%2520class%253D%2522submenu-link%2522%2520href%253D%2522%2523%2522%253EJAVA%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%253C%252Ful%253E%250A%253C%252Fnav%253E"
             style="height: 545px;"
             sandbox="allow-scripts allow-same-origin">
           </iframe>

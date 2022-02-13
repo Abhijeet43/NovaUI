@@ -5,7 +5,7 @@
     <meta name="author" content="Abhijeet Sinha" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Badge</title>
+    <title>Badge | NovaUI</title>
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -66,6 +66,9 @@
         <div class="sidebar-section">
           <div class="sidebar-section-title">Getting Started</div>
           <ul class="sidebar-items">
+            <li class="sidebar-item-icon">
+              <i class="fa-solid fa-xmark cross" id="cross"></i>
+            </li>
             <li class="sidebar-item">
               <a
                 class="sidebar-link"
@@ -251,7 +254,10 @@
           </div>
           <div class="content-text">
             Number Badge is used to show the numeric value of items in the
-            parent component.
+            parent component. Number badge can be created using
+            <strong class="highlight">numeric-badge</strong> inside of
+            <strong class="highlight">badge</strong> which is assigned to
+            wrapper.
           </div>
           <div class="example-box">
             <div class="badge">

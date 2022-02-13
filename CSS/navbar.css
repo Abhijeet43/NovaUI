@@ -44,9 +44,8 @@
   position: absolute;
   font-size: var(--font-size-3);
   top: 1rem;
-  right: 1rem;
+  right: 0.5rem;
   color: var(--lynx-red-color);
-  z-index: 555;
   cursor: pointer;
   display: none;
 }
@@ -56,14 +55,8 @@
   color: var(--dark-purple-color);
 }
 
-.fa-xmark {
-  font-size: var(--font-size-1);
-  color: var(--secondary-color);
-  margin-right: 1rem;
-}
-
 /* MEDIA QUERIES */
-@media (max-width: 540px) {
+@media (max-width: 768px) {
   .nav-item {
     display: none;
   }

@@ -356,6 +356,13 @@
 
 @media (max-width: 540px) {
   .horizontal-card {
-    max-width: 45rem;
+    max-width: 42rem;
+    height: 22rem;
+  }
+  .horizontal-card-content {
+    margin-left: 3rem;
+  }
+  .cart-btn {
+    max-width: 8rem;
   }
 }
