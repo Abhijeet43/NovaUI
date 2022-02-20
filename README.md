@@ -25,8 +25,6 @@ Nova is a modern lightweight,modular and ready-to-use CSS library for developing
 ![CSS](https://img.shields.io/badge/CSS-CSS-orange)
 ![JS](https://img.shields.io/badge/JS-JS-yellow)
 
-[Back To The Top](#NovaUI)
-
 ---
 
 # Installation
