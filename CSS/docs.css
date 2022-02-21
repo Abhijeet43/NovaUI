@@ -24,7 +24,7 @@
 }
 
 .content-box {
-  padding: 0.1rem 0.5rem;
+  padding: 1rem 0.5rem;
 }
 
 .content-title {
@@ -174,7 +174,7 @@ iframe {
     padding-top: 5rem;
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    width: 100%;
+    width: 102%;
     transform: translateX(-100%);
     z-index: 8888;
   }
